@@ -1,0 +1,60 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5 d-flex justify-content-center"> <!-- Center the form -->
+        <div class="col-md-5 border p-4 rounded" style="background-color: #f9f9f9;"> <!-- Form with 5 columns, border, and rounded corners -->
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form method="post" action="{% url 'contact' %}">
+                {% csrf_token %}
+                
+                <!-- Name Field -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                
+                <!-- Email Field -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                
+                <!-- Subject Field -->
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                
+                <!-- Phone Field -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone (Optional)</label>
+                    <input type="text" class="form-control" id="phone" name="phone">
+                </div>
+                
+                <!-- Message Field -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <!-- Buttons in the same row with responsive design -->
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 d-grid mb-2 mb-md-0"> <!-- Send Button -->
+                        <button type="submit" class="btn btn-primary" style="background-color: #6f42c1;">
+                            Send Message
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-6 d-grid"> <!-- Back Button -->
+                        <a href="{% url 'home' %}" class="btn btn-primary" style="background-color: #6f42c1; color: white;">
+                            Back to Explore Blogs
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add spacing below the form to separate it from the footer -->
+    <div style="height: 50px;"></div>
+{% endblock content %}
