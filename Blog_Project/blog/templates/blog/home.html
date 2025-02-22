@@ -1,33 +1,77 @@
 {% extends 'blog/base.html' %}
-
+{% load static %}
 {% block content %}
-    <div class="container-fluid" style="margin: 0; padding: 0;"> <
-        <div class="row bg-light py-5"> 
-            <div class="col-12 text-center">
-                
-                <h3 class="text-dark mt-4" style="font-size: 2rem; font-weight: bold;">Welcome to Universal Blog!</h3>
+    <div class="container-fluid p-0" style="background-color: white;">
+        
+        <!-- Hero Section -->
+        <div class="row py-5 text-center">
+            <div class="col-12">
+                <h1 class="text-dark mt-4 fw-bold" style="font-size: 2.5rem;">
+                    Welcome to <span class="brand-color">Global Thoughts</span>!
+                </h1>
 
-                
-                <p class="text-dark" style="font-size: 1.25rem; margin-top: 20px;">
-                    Stay tuned for amazing content across various topics ranging from technology to lifestyle and beyond. 
-                    Explore the universe of knowledge with us!
-                </p>
-                
-              
-                <p class="text-dark" style="font-size: 1.25rem; margin-top: 10px;">
-                    You can explore blogs here related to the latest tech trends, space exploration, lifestyle advice, and much more!
+                <p class="text-secondary mx-auto" style="font-size: 1.2rem; max-width: 800px;">
+                    Discover insightful blogs on technology, innovation, lifestyle, and beyond. 
+                    A world of knowledge at your fingertips!
                 </p>
 
-     
-                <p class="text-dark" style="font-size: 1.25rem; margin-top: 20px; font-weight: bold;">
-                    You can post it! Share your thoughts, articles, and ideas with us. Join the conversation now!
+                <p class="text-secondary fw-bold mt-3" style="font-size: 1.3rem;">
+                    Share your thoughts and be part of a global conversation!
                 </p>
 
-    
-                <a href="{% url 'home' %}" class="btn btn-primary mt-4" style="font-size: 1rem; padding: 10px 20px; text-transform: uppercase;background-color: #6f42c1;">
-                    Explore Blogs
+                <a href="{% url 'home' %}" class="btn custom-btn mt-4">
+                    Explore Blogs 🚀
                 </a>
             </div>
         </div>
+
+        <!-- Featured Topics Section -->
+        <div class="row py-5 text-center">
+            <div class="col-12">
+                <h2 class="text-dark fw-bold" style="font-size: 2rem;">
+                    Discover Trending Topics
+                </h2>
+                <p class="text-secondary" style="font-size: 1.2rem;">
+                    Explore a variety of exciting categories!
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 shadow-sm rounded bg-light">
+                    <h3 class="text-dark">🚀 Tech & Innovation</h3>
+                    <p class="text-secondary">Stay updated with cutting-edge technology trends.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 shadow-sm rounded bg-light">
+                    <h3 class="text-dark">🌍 Travel & Lifestyle</h3>
+                    <p class="text-secondary">Discover hidden gems and lifestyle hacks.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 shadow-sm rounded bg-light">
+                    <h3 class="text-dark">💡 Ideas & Inspiration</h3>
+                    <p class="text-secondary">Get motivated with creative and thought-provoking content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="row py-5 text-center">
+            <div class="col-12">
+                <h2 class="text-dark fw-bold" style="font-size: 2rem;">
+                    Start Your Blogging Journey Today!
+                </h2>
+                <p class="text-secondary" style="font-size: 1.2rem;">
+                    Whether you're an avid reader or a passionate writer, Global Thoughts welcomes you.
+                </p>
+                <a href="{% url 'home' %}" class="btn custom-btn mt-3">
+                    Get Started ✍️
+                </a>
+            </div>
+        </div>
+
     </div>
 {% endblock content %}

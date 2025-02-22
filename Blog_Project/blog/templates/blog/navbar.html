@@ -1,37 +1,62 @@
-<nav class="navbar navbar-expand-lg navbar-custom" style="background-color: #6f42c1;">
+<nav class="navbar navbar-expand-lg navbar-custom" style="background: linear-gradient(135deg, #6a11cb, #2575fc); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
   <div class="container">
-
     
-    <a class="navbar-brand text-white" href="{% url 'home' %}">Universal Blog</a>
+    <a class="navbar-brand text-white fw-bold" href="{% url 'home' %}" style="font-size: 1.5rem; text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);">
+      ⚡ Global Thoughts
+    </a>
 
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    
     <div class="collapse navbar-collapse" id="navbarNav">
-
-     
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="{% url 'home' %}">Home</a>
+          <a class="nav-link nav-glow" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="{% url 'contact' %}">Contact</a>
+          <a class="nav-link nav-glow" href="{% url 'contact' %}">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="{% url 'about' %}">About</a>
+          <a class="nav-link nav-glow" href="{% url 'about' %}">About</a>
         </li>
 
-          <li class="nav-item">
-              <a class="nav-link text-white" href="#">Logout</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link text-white" href="#">Login</a>
-          </li>
-      
+        <li class="nav-item">
+          <a class="btn btn-outline-light rounded-pill px-3 mx-2 btn-glow" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light rounded-pill px-3 btn-glow" href="#">Logout</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<style>
+/* Neon Glow Effect */
+.nav-glow {
+  color: white !important;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-glow:hover {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+}
+
+/* Button Glow Effect */
+.btn-glow {
+  transition: 0.3s;
+}
+
+.btn-glow:hover {
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.7);
+}
+
+/* Navbar Smoothness */
+.navbar-custom {
+  backdrop-filter: blur(10px);
+  border-radius: 0px 0px 20px 20px;
+}
+</style>
