@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block content %}
-    <div class="container mt-5 d-flex justify-content-center"> <!-- Center the form -->
-        <div class="col-md-5 border p-4 rounded" style="background-color: #f9f9f9;"> <!-- Form with 5 columns, border, and rounded corners -->
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="col-md-6 contact-form"> 
             <h2 class="text-center mb-4">Contact Us</h2>
             <form method="post" action="{% url 'contact' %}">
                 {% csrf_token %}
@@ -38,15 +38,15 @@
                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
 
-                <!-- Buttons in the same row with responsive design -->
+                <!-- Buttons Row -->
                 <div class="row mt-4">
-                    <div class="col-12 col-md-6 d-grid mb-2 mb-md-0"> <!-- Send Button -->
-                        <button type="submit" class="btn btn-primary" style="background-color: #6f42c1;">
+                    <div class="col-12 col-md-6 d-grid mb-2 mb-md-0">
+                        <button type="submit" class="btn custom-btn">
                             Send Message
                         </button>
                     </div>
-                    <div class="col-12 col-md-6 d-grid"> <!-- Back Button -->
-                        <a href="{% url 'home' %}" class="btn btn-primary" style="background-color: #6f42c1; color: white;">
+                    <div class="col-12 col-md-6 d-grid">
+                        <a href="{% url 'home' %}" class="btn custom-btn">
                             Back to Explore Blogs
                         </a>
                     </div>
@@ -55,6 +55,6 @@
         </div>
     </div>
 
-    <!-- Add spacing below the form to separate it from the footer -->
-    <div style="height: 50px;"></div>
-{% endblock content %}
+    <!-- Extra Spacing -->
+    <div class="spacer"></div>
+{% endblock %}

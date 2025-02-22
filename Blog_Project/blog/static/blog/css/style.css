@@ -1,3 +1,171 @@
+/* General Styling */
 body {
-    background-color: whitesmoke; /* Light grayish-white background */
+    background-color: white;
 }
+
+/* Brand Color */
+.brand-color {
+    color: #6a11cb;
+}
+
+/* Buttons */
+.custom-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    display: inline-block;
+}
+
+.custom-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 15px rgba(106, 17, 203, 0.7);
+    color: white;
+}
+
+/* Section Styling */
+.container-fluid {
+    padding: 0;
+}
+
+/* Hero Section */
+.text-center h1 {
+    font-size: 2.5rem;
+}
+
+/* Featured Topics Styling */
+.row.text-center .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row.text-center .col-md-4 .p-4 {
+    width: 100%;
+    max-width: 350px;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.row.text-center .col-md-4 .p-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+/* General Styles */
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+/* Profile Image */
+.profile-img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Branding Color */
+.brand-color {
+    color: #6f42c1;
+}
+
+/* About Text */
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Custom Button */
+.custom-btn {
+    background-color: #6f42c1;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(111, 66, 193, 0.4);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.custom-btn:hover {
+    background-color: #5a35a1;
+    box-shadow: 0px 6px 15px rgba(111, 66, 193, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Information Cards */
+.info-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-card .icon {
+    font-size: 2.5rem;
+    color: #6f42c1;
+    margin-bottom: 10px;
+}
+
+/* Add space after 'Back to Explore' button */
+.spacer {
+    height: 60px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Custom Button */
+.custom-btn {
+    background-color: #6f42c1;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(111, 66, 193, 0.4);
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #5a35a1;
+    box-shadow: 0px 6px 15px rgba(111, 66, 193, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Add space below form */
+.spacer {
+    height: 60px;
+}
+
+
